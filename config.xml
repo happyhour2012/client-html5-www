@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns		= "http://www.w3.org/ns/widgets"
+	xmlns:gap	= "http://phonegap.com/ns/1.0"
+	id		= "com.github.happyhour2012.client"
+	version 	= "1.0.0">
+
+	<name>Einkaufsliste</name>
+
+	<description>
+		Einkaufsliste auf Basis von jQuery Mobile und Phonegap
+	</description>
+
+	<author href="http://www.github.com/happyhour2012"
+		email="happyhour2012@example.com">
+		Andrew Lunny
+	</author>
+
+	<icon src="assets/img/icon.png" gap:role="default" />
+
+	<feature name="http://api.phonegap.com/1.0/network"/>
+
+	<preference name="orientation" value="portrait" />
+</widget>
