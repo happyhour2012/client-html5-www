@@ -12,11 +12,12 @@
      <body>
         <div data-role="page" id="page1">
             <div data-theme="a" data-role="header">
-                <h3>
+                <h1>
                     Listen
-                </h3>
-                <a data-role="button" data-transition="fade" data-theme="a" href="page1">
-                    &lt;
+                </h1>
+                <a data-role="button" data-transition="fade" data-theme="a" href="#page-list-add"
+                        data-icon="plus" class="ui-btn-right">
+                    New
                 </a>
             </div>
             <div data-role="content">
@@ -30,7 +31,7 @@
                         </a>
                     </li>
                     <li data-theme="c">
-                        <a href="#page2" data-transition="slide"  >
+                        <a href="#page-list-add" data-transition="slide"  >
                             Einkauf2 (30%)
                         </a>
                     </li>
@@ -50,7 +51,7 @@
                 </h3>
             </div>
         </div>
-        <div data-role="page" id="page2">
+        <div data-role="page" id="page-list-add">
              <div data-theme="a" data-role="header">
                 <h3>
                     Neue Liste
