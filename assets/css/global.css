@@ -1,0 +1,4 @@
+/* eliminate flicker transitions on android */
+.ui-page {
+	-webkit-backface-visibility: hidden;
+}
