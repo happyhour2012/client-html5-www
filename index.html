@@ -22,7 +22,7 @@
                 </a>
             </div>
             <div data-role="content">
-                <ul data-role="listview" data-divider-theme="a" data-inset="false">
+                <ul data-role="listview" data-divider-theme="a" data-inset="false" id="lists">
                     <li data-role="list-divider" role="heading">
                         Aktuelle Listen
                     </li>
@@ -75,7 +75,13 @@
         	
         </div>
         <script>
-            //App custom javascript
+        $(document).bind('pageinit', function() {
+            $('#lists li').bind('swiperight', function() {
+                if(confirm('Soll die Liste wirklich gelöscht werden?')) {
+                    $(this).hide();
+                }
+            });
+        });
         </script>
     </body>
 </html>
