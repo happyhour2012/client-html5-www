@@ -9,6 +9,9 @@
         <script type="text/javascript" src="assets/js/phonegap.js"></script>
         <script type="text/javascript" src="assets/js/jquery.js"></script>
         <script type="text/javascript" src="assets/js/jquery.mobile.js"></script>
+        <script type="text/javascript" src="assets/js/underscore.js"></script>
+        <script type="text/javascript" src="assets/js/backbone.js"></script>
+        <script type="text/javascript" src="assets/js/application.js"></script>
     </head>
      <body>
         <div data-role="page" id="page-list">
@@ -23,19 +26,10 @@
             </div>
             <div data-role="content">
                 <ul data-role="listview" data-divider-theme="a" data-inset="false" id="lists">
-                    <li data-role="list-divider" role="heading">
+                    <li data-role="list-divider" role="heading" id="divider_actual_lists">
                         Aktuelle Listen
                     </li>
-                    <li>
-                        <a href="#page-list" data-transition="slide">
-                            Einfkaufsliste 1   (85%)
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#page-list-add" data-transition="slide"  >
-                            Einkauf2 (30%)
-                        </a>
-                    </li>
+                    
                     <li data-role="list-divider" role="heading">
                         Abgearbeitet
                     </li>
@@ -82,6 +76,11 @@
                 }
             });
         });
+        </script>
+        <script type="text/template" id="grocerylist-template">
+            <a href="#" data-transition="slide">
+                <%= title %> (100%)
+            </a>
         </script>
     </body>
 </html>
